@@ -6,35 +6,83 @@
   max-width: 800px;
 }
 
-h1 {
-  margin: 40px auto;
-  display: block;
-}
+
 
 .bildetekst {
   display: flex;
   flex-direction: row;
-  margin: 40px 0;
 }
 
 .bildetekst img {
   object-fit: cover;
-  width: 60%;
-  margin: 0 40px 0 0;
+  width: 50%;
+}
+.bildetekst.right {
+  flex-direction: row-reverse;
+}
+
+.tekstboks {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f2f2f2;
 }
 span  {
   display: block;
-  width: 40%;
+  font-size: 20px;
+  padding: 0 30px;
+}
+h2 {
+  font-size: 30px;
+  font-style: italic;
+  padding: 0 30px;
 }
 
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin: 40px auto;
+  display: block;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  color: white;
+  font-size: 70px;
+  text-shadow: 0 0 10px black;
+}
+.hovedbilde {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 
 @media screen and (max-width: 900px) {
-  .bildetekst img {
+  h1 {
+    font-size: 30px;
+  }
+  .bildetekst, .bildetekst.right {
+    flex-direction: column-reverse;
+  }
+  .bildetekst img, .tekstboks {
+    width: 100%;
+  }
+  span {
+    padding: 0px 20px 20px 20px;
+  }
+  h2 {
+    padding: 20px 20px 0 20px;
+  }
+  /* .bildetekst img {
     width: 50%;
     display: block;
   }
   span {
     display: block;
     width: 50%;
-  }
+  } */
 }
