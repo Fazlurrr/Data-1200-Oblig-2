@@ -1,0 +1,17 @@
+* {
+  font-family: sans-serif;
+}
+.row {
+  margin: 0 auto;
+  width: 800px;
+}
+
+h1 {
+  margin: 40px auto;
+  display: block;
+}
+
+.bildetekst {
+  display: flex;
+  flex-direction: row;
+}
