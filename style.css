@@ -1,0 +1,37 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;    
+    font-family: sans-serif;
+    color: #fff;
+}
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(https://scontent.fosl4-2.fna.fbcdn.net/v/t1.15752-9/243248846_618133939559159_3517693858095399293_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=dovHi529Y4cAX_5zU7h&_nc_ht=scontent.fosl4-2.fna&oh=8b246c47b8e2ea94723ec422564aa855&oe=6189541A) no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    top: 0;
+}
+.intro .banner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+h1 {
+    font-family: sans-serif;
+    font-size: 300%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+    text-shadow: 0px 0px 250px #000;
+    
+}
